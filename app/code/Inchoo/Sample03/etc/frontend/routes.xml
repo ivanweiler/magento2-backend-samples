@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="inchoo_sample03" frontName="sample03">
+            <module name="Inchoo_Sample03" />
+        </route>
+    </router>
+</config>

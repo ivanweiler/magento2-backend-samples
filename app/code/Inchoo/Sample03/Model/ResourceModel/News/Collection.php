@@ -1,0 +1,19 @@
+<?php
+
+namespace Inchoo\Sample03\Model\ResourceModel;
+
+class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
+{
+    /**
+     * Initialize news resource collection
+     *
+     * @return void
+     */
+    protected function _construct()
+    {
+        $this->_init(
+            \Inchoo\Sample03\Model\News::class,
+            \Inchoo\Sample03\Model\ResourceModel\News::class
+        );
+    }
+}
