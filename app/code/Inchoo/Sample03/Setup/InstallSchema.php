@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Demo\Setup;
+namespace Inchoo\Sample03\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\SchemaSetupInterface;
@@ -24,11 +24,11 @@ class InstallSchema implements InstallSchemaInterface
             ['identity' => true, 'unsigned' => true, 'nullable' => false, 'primary' => true],
             'News Id'
         )->addColumn(
-            'name',
+            'title',
             \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
             255,
             [],
-            'News Name'
+            'News Title'
         )->setComment(
             'News Table'
         );
