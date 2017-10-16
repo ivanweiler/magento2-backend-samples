@@ -5,7 +5,7 @@ namespace Inchoo\Sample03\Model;
 class News extends \Magento\Framework\Model\AbstractModel
 {
     /**
-     * Initialize news model
+     * Initialize news Model
      *
      * @return void
      */

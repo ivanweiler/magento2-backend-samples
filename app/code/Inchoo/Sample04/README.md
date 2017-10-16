@@ -6,6 +6,5 @@
 
 
 ## Todo
-* Refactor Sample03 code to use repository
-
+* Refactor Sample03 blocks to use repository
 
