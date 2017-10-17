@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Inchoo\Sample04\Api\Data\NewsSearchResultsInterface" type="Magento\Framework\Api\SearchResults" />
+    <preference for="Inchoo\Sample04\Api\Data\NewsInterface" type="Inchoo\Sample04\Model\News" />
+    <preference for="Inchoo\Sample04\Api\NewsRepositoryInterface" type="Inchoo\Sample04\Model\NewsRepository" />
+
+</config>

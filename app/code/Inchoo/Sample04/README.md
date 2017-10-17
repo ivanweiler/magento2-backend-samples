@@ -4,7 +4,6 @@
 * Interfaces
 * Web Api
 
-
 ## Todo
-* Refactor Sample03 blocks to use repository
-
+* Implement and test missing NewsRepository::delete() method
+* Refactor Sample03 code to use repository logic

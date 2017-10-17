@@ -38,17 +38,29 @@ class Crud  extends \Magento\Framework\App\Action\Action
      */
     public function execute()
     {
+        /**
+         * New entry example
+         */
         $news = $this->newsModelFactory->create();
         $news->setTitle('Some fake news title');
 
-        //big dump, can crash browser
-        //var_dump($news);
-
-        var_dump($news->debug());
-
         $this->newsResource->save($news);
 
-        //$this->newsResource->load($news, 1);
+        //var_dump($news); //big dump, can crash browser without xdebug
+        var_dump($news->debug());
+
+
+        /**
+         * Load example
+         */
+        $news = $this->newsModelFactory->create();
+        $this->newsResource->load($news, 1);
+
+        if($news->getId()) {
+            //check if loaded
+        }
+
+        var_dump($news->debug());
     }
 
 }
