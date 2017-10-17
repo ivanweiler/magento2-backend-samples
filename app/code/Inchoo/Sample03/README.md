@@ -10,6 +10,7 @@
 * Create sample03/news/view/ controller (and View block and template) and display requested news on it
   (ex. /sample03/news/view/id/5 displays news with id=5)
 * Create schema and model/resource/collection for news comments. Comment table needs to have foreign key to news table.
+* Examine/trace model/resource/collection abstracts, find where db queries are executed
 
-## Aditional resources:
+## Additional resources:
 * <http://inchoo.net/magento-2/setup-scripts-magento-2/>

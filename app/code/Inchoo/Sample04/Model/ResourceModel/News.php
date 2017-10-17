@@ -3,7 +3,7 @@
 namespace Inchoo\Sample04\Model\ResourceModel;
 
 use Magento\Cms\Model\ResourceModel\AbstractCollection;
-use \Magento\Framework\Model\ResourceModel\Db\AbstractDb;
+use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 
 class News extends AbstractDb
 {

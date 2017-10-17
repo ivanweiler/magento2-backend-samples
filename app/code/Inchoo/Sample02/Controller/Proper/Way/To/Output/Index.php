@@ -26,6 +26,10 @@ class Index extends \Magento\Framework\App\Action\Action
      */
     public function execute()
     {
+        /**
+         * Just a simple example what would be proper way to output not-page in M2
+         */
+
         $output = 'Hello World';
 
         /** @var \Magento\Framework\Controller\Result\Raw $resultRaw */
