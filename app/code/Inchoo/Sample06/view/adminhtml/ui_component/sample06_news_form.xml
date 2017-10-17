@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">sample06_news_form.news_form_data_source</item>
+        </item>
+        <item name="template" xsi:type="string">templates/form/collapsible</item>
+    </argument>
+
+    <settings>
+        <namespace>sample06_news_form</namespace>
+        <dataScope>data</dataScope>
+        <deps>
+            <dep>sample06_news_form.news_form_data_source</dep>
+        </deps>
+
+        <buttons>
+            <button name="back">
+                <label>Back</label>
+                <class>back</class>
+                <url path="sample06/news/index"/>
+            </button>
+            <button name="save">
+                <label translate="true">Save News</label>
+                <class>save primary</class>
+            </button>
+        </buttons>
+    </settings>
+    
+    <dataSource name="news_form_data_source">
+        <argument name="data" xsi:type="array">
+            <item name="js_config" xsi:type="array">
+                <item name="component" xsi:type="string">Magento_Ui/js/form/provider</item>
+            </item>
+        </argument>
+        <settings>
+            <submitUrl path="sample06/news/save"/>
+        </settings>
+        <dataProvider class="Inchoo\Sample06\Ui\Component\NewsDataProvider" name="news_form_data_source">
+            <settings>
+                <requestFieldName>news_id</requestFieldName>
+                <primaryFieldName>news_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+    
+    <fieldset name="general">
+        <settings>
+            <label />
+        </settings>
+
+        <hidden name="news_id" sortOrder="1">
+            <settings>
+                <dataScope>news_id</dataScope>
+            </settings>
+        </hidden>
+
+        <input name="title" sortOrder="10">
+            <settings>
+                <label translate="true">Title</label>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataScope>title</dataScope>
+            </settings>
+        </input>
+
+        <textarea name="sample_textarea" sortOrder="20">
+            <settings>
+                <label translate="true">Sample Textarea</label>
+                <dataScope>title</dataScope>
+            </settings>
+        </textarea>
+
+    </fieldset>
+</form>

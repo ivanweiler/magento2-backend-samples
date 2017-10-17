@@ -4,7 +4,7 @@
 * Model / Resource / Collection
 
 ## Todo
-* Examine Magento's 'setup_module' table
+* Examine Magento's `setup_module` table
 * UpdateSchema - add created_at, updated_at and content columns
 * Create sample03/news/list controller (and List block and template) and display last 10 news on it in descending order
 * Create sample03/news/view/ controller (and View block and template) and display requested news on it

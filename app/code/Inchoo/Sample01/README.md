@@ -7,6 +7,7 @@
 * Change route name to /hello
 * Create second controller /hello/sub1_sub2/world
 * Create config settings with system.xml - Display Hello World: Y/N
+* Examine `core_config_data` database table, find your saved config (from above task)
 * Optional: Make block respect created setting?
 
 ## Additional reference:
