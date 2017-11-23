@@ -25,4 +25,20 @@ interface NewsInterface
      */
     public function getTitle();
 
+    /**
+     * Set ID
+     *
+     * @param string $id
+     * @return NewsInterface
+     */
+    public function setId($id);
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     * @return NewsInterface
+     */
+    public function setTitle($title);
+
 }
