@@ -5,9 +5,9 @@ namespace Inchoo\Sample06\Ui\Component;
 class NewsDataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
 {
     /**
-     * @param $name
-     * @param $primaryFieldName
-     * @param $requestFieldName
+     * @param string $name
+     * @param string $primaryFieldName
+     * @param string $requestFieldName
      * @param \Inchoo\Sample04\Model\ResourceModel\News\CollectionFactory $collectionFactory
      * @param array $meta
      * @param array $data
