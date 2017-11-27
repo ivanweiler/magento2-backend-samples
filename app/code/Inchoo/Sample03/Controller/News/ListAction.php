@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample03\Controller\Index;
+namespace Inchoo\Sample03\Controller\News;
 
 /**
  * Class ListAction
