@@ -81,16 +81,13 @@ class LayoutPlugin
 
     private function _wrapElement($result, $name)
     {
-        if(empty($result)) {
-            //return $result;
-        }
-
         if ($this->layout->isUiComponent($name) || $this->layout->isBlock($name)) {
 
             /** @var \Magento\Framework\View\Element\AbstractBlock $block */
             $block = $this->layout->getBlock($name);
 
             /*
+            // show block template (phtml) after name; uncomment and test
             $template = $block->getTemplate();
 
             if($template) {
@@ -107,7 +104,7 @@ class LayoutPlugin
 <div class="debugging-hints" style="position: relative; border: 1px dotted red; margin: 6px 2px; padding: 18px 2px 2px 2px;">
 <div class="debugging-hint-template-file" style="position: absolute; top: 0; padding: 2px 5px; font: normal 11px Arial; background: red; left: 0; color: white; white-space: nowrap;" title="{$name}">{$name}</div>
 {$result}
-<div style="clear:xboth"></div>
+<div style="clear:both"></div>
 </div>
 HTML;
 
@@ -117,7 +114,7 @@ HTML;
 <div class="debugging-hints" style="position: relative; border: 1px dotted blue; margin: 6px 2px; padding: 18px 2px 2px 2px;">
 <div class="debugging-hint-template-file" style="position: absolute; top: 0; padding: 2px 5px; font: normal 11px Arial; background: blue; left: 0; color: white; white-space: nowrap;" title="{$name}">{$name}</div>
 {$result}
-<div style="clear:xboth"></div>
+<div style="clear:both"></div>
 </div>
 HTML;
         }
