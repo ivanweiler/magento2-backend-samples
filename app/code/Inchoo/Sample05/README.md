@@ -15,4 +15,4 @@
 * Examine layouts and templates in Magento_Theme (all main layouts are there)
 
 ## Tip
-Use `php bin/magento dev:template-hints:enable`
+Enable Inchoo_Template_Hints and use `php bin/magento dev:template-hints:enable`
