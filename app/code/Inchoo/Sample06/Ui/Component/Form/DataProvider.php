@@ -1,8 +1,8 @@
 <?php
 
-namespace Inchoo\Sample06\Ui\Component;
+namespace Inchoo\Sample06\Ui\Component\Form;
 
-class NewsDataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
+class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
 {
     /**
      * @param string $name
@@ -30,20 +30,11 @@ class NewsDataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
      */
     public function getData()
     {
-        /**
-         * This is just a hack-around to use one DataProvider for both grid and form,
-         * it's probably really bad idea
-         */
-        if($this->getName() == 'news_form_data_source') {
+        $data = [];
+        $dataObject = $this->getCollection()->getFirstItem();
 
-            $dataObject = $this->getCollection()->getFirstItem();
-
-            $data = [
-                $dataObject->getId() => $dataObject->toArray()
-            ];
-
-        } else {
-            $data = $this->getCollection()->toArray();
+        if($dataObject->getId()) {
+            $data[$dataObject->getId()] = $dataObject->toArray();
         }
 
         return $data;

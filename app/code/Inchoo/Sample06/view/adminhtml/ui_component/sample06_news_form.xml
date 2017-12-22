@@ -38,7 +38,7 @@
         <settings>
             <submitUrl path="sample06/news/save"/>
         </settings>
-        <dataProvider class="Inchoo\Sample06\Ui\Component\NewsDataProvider" name="news_form_data_source">
+        <dataProvider class="Inchoo\Sample06\Ui\Component\Form\DataProvider" name="news_form_data_source">
             <settings>
                 <requestFieldName>news_id</requestFieldName>
                 <primaryFieldName>news_id</primaryFieldName>

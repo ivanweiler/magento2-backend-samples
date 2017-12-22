@@ -4,7 +4,7 @@ namespace Inchoo\Sample06\Controller\Adminhtml\News;
 
 use Magento\Framework\Controller\ResultFactory;
 
-class Edit extends \Magento\Cms\Controller\Adminhtml\Block
+class Edit extends \Magento\Backend\App\Action
 {
     /**
      * Edit News action.
