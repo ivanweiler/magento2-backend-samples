@@ -14,3 +14,4 @@
 
 ## Additional resources:
 * <http://inchoo.net/magento-2/setup-scripts-magento-2/>
+* <https://framework.zend.com/manual/1.12/en/zend.db.select.html>
