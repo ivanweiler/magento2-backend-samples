@@ -28,8 +28,8 @@
             </storageConfig>
             <updateUrl path="mui/index/render"/>
         </settings>
-        <aclResource>Inchoo_Sample06::news</aclResource>
-        <dataProvider class="Inchoo\Sample06\Ui\Component\Listing\DataProvider" name="sample06_news_listing_data_source">
+        <aclResource>Favicode_Sample06::news</aclResource>
+        <dataProvider class="Favicode\Sample06\Ui\Component\Listing\DataProvider" name="sample06_news_listing_data_source">
             <settings>
                 <requestFieldName>id</requestFieldName>
                 <primaryFieldName>news_id</primaryFieldName>
@@ -70,7 +70,7 @@
                 <label translate="true">Title</label>
             </settings>
         </column>
-        <actionsColumn name="actions" class="Inchoo\Sample06\Ui\Component\Listing\Column\EditActions">
+        <actionsColumn name="actions" class="Favicode\Sample06\Ui\Component\Listing\Column\EditActions">
             <settings>
                 <indexField>news_id</indexField>
             </settings>

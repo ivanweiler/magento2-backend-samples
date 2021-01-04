@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample03\Model;
+namespace Favicode\Sample03\Model;
 
 class News extends \Magento\Framework\Model\AbstractModel
 {
@@ -11,7 +11,7 @@ class News extends \Magento\Framework\Model\AbstractModel
      */
     protected function _construct()
     {
-        $this->_init(\Inchoo\Sample03\Model\ResourceModel\News::class);
+        $this->_init(\Favicode\Sample03\Model\ResourceModel\News::class);
     }
 
 }

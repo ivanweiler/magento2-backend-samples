@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\TemplateHints\Plugin\View;
+namespace Favicode\TemplateHints\Plugin\View;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
 use Magento\Framework\View\Layout;

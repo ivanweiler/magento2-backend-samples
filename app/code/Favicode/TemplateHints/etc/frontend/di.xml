@@ -5,6 +5,6 @@
         <plugin name="debug_hints" disabled="true"/>
     </type>
     <type name="Magento\Framework\View\Layout">
-        <plugin sortOrder="1" name="favicode_template_hints" type="Inchoo\TemplateHints\Plugin\View\LayoutPlugin" />
+        <plugin sortOrder="1" name="favicode_template_hints" type="Favicode\TemplateHints\Plugin\View\LayoutPlugin" />
     </type>
 </config>

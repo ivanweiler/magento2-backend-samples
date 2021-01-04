@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample06\Ui\Component\Listing\Column;
+namespace Favicode\Sample06\Ui\Component\Listing\Column;
 
 use Magento\Ui\Component\Listing\Columns\Column;
 

@@ -24,12 +24,12 @@ class NewsRepository implements NewsRepositoryInterface
     protected $newsResource;
 
     /**
-     * @var \Inchoo\Sample04\Model\ResourceModel\News\CollectionFactory
+     * @var \Favicode\Sample04\Model\ResourceModel\News\CollectionFactory
      */
     protected $newsCollectionFactory;
 
     /**
-     * @var \Inchoo\Sample04\Api\Data\NewsSearchResultsInterfaceFactory
+     * @var \Favicode\Sample04\Api\Data\NewsSearchResultsInterfaceFactory
      */
     protected $searchResultsFactory;
 
@@ -40,10 +40,10 @@ class NewsRepository implements NewsRepositoryInterface
 
 
     public function __construct(
-        \Inchoo\Sample04\Api\Data\NewsInterfaceFactory $newsModelFactory,
-        \Inchoo\Sample04\Model\ResourceModel\News $newsResource,
-        \Inchoo\Sample04\Model\ResourceModel\News\CollectionFactory $newsCollectionFactory,
-        \Inchoo\Sample04\Api\Data\NewsSearchResultsInterfaceFactory $searchResultsFactory,
+        \Favicode\Sample04\Api\Data\NewsInterfaceFactory $newsModelFactory,
+        \Favicode\Sample04\Model\ResourceModel\News $newsResource,
+        \Favicode\Sample04\Model\ResourceModel\News\CollectionFactory $newsCollectionFactory,
+        \Favicode\Sample04\Api\Data\NewsSearchResultsInterfaceFactory $searchResultsFactory,
         CollectionProcessorInterface $collectionProcessor
     ) {
         $this->newsModelFactory = $newsModelFactory;
@@ -100,7 +100,7 @@ class NewsRepository implements NewsRepositoryInterface
      */
     public function getList(SearchCriteriaInterface $searchCriteria)
     {
-        /** @var \Inchoo\Sample04\Model\ResourceModel\News\Collection $collection */
+        /** @var \Favicode\Sample04\Model\ResourceModel\News\Collection $collection */
         $collection = $this->newsCollectionFactory->create();
 
         $this->collectionProcessor->process($searchCriteria, $collection);

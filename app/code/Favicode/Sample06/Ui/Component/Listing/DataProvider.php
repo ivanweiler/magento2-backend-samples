@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample06\Ui\Component\Listing;
+namespace Favicode\Sample06\Ui\Component\Listing;
 
 class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
 {
@@ -8,7 +8,7 @@ class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
      * @param string $name
      * @param string $primaryFieldName
      * @param string $requestFieldName
-     * @param \Inchoo\Sample04\Model\ResourceModel\News\CollectionFactory $collectionFactory
+     * @param \Favicode\Sample04\Model\ResourceModel\News\CollectionFactory $collectionFactory
      * @param array $meta
      * @param array $data
      */
@@ -16,7 +16,7 @@ class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
         $name,
         $primaryFieldName,
         $requestFieldName,
-        \Inchoo\Sample04\Model\ResourceModel\News\CollectionFactory $collectionFactory,
+        \Favicode\Sample04\Model\ResourceModel\News\CollectionFactory $collectionFactory,
         array $meta = [],
         array $data = []
     ) {

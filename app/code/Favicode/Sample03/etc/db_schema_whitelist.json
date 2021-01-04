@@ -1,0 +1,11 @@
+{
+    "favicode_news": {
+        "column": {
+            "news_id": true,
+            "title": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

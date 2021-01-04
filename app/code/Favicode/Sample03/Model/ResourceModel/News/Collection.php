@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample03\Model\ResourceModel\News;
+namespace Favicode\Sample03\Model\ResourceModel\News;
 
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
@@ -12,8 +12,8 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
     protected function _construct()
     {
         $this->_init(
-            \Inchoo\Sample03\Model\News::class,
-            \Inchoo\Sample03\Model\ResourceModel\News::class
+            \Favicode\Sample03\Model\News::class,
+            \Favicode\Sample03\Model\ResourceModel\News::class
         );
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
-namespace Inchoo\Sample04\Model;
+namespace Favicode\Sample04\Model;
 
 use Magento\Framework\Model\AbstractModel;
-use Inchoo\Sample04\Api\Data\NewsInterface;
+use Favicode\Sample04\Api\Data\NewsInterface;
 
 class News extends AbstractModel implements NewsInterface
 {
@@ -14,7 +14,7 @@ class News extends AbstractModel implements NewsInterface
      */
     protected function _construct()
     {
-        $this->_init(\Inchoo\Sample04\Model\ResourceModel\News::class);
+        $this->_init(\Favicode\Sample04\Model\ResourceModel\News::class);
     }
 
     /**

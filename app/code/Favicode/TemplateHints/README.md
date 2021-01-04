@@ -1,4 +1,4 @@
-# Inchoo_TemplateHints
+# Favicode_TemplateHints
 
 This module helps to visualize containers and blocks in **Sample05**. 
 

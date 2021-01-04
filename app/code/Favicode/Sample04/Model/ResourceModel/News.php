@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample04\Model\ResourceModel;
+namespace Favicode\Sample04\Model\ResourceModel;
 
 use Magento\Cms\Model\ResourceModel\AbstractCollection;
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
