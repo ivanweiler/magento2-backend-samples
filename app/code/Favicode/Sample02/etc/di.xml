@@ -13,13 +13,13 @@
     <!--
     <type name="Favicode\Sample02\Controller\Test\One">
         <arguments>
-            <argument name="dummy" xsi:type="object">Favicode\Demo\Model\Dummy2</argument>
+            <argument name="dummy" xsi:type="object">Favicode\Sample02\Model\Dummy2</argument>
         </arguments>
     </type>
     -->
 
     <!--
-    <virtualType name="Favicode\Sample02\Model\Dummy3" type="Favicode\Demo\Model\Dummy">
+    <virtualType name="Favicode\Sample02\Model\Dummy3" type="Favicode\Sample02\Model\Dummy">
         <arguments>
             <argument name="input" xsi:type="number">5</argument>
         </arguments>
